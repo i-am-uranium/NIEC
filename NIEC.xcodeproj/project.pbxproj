@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B580DF71B5F811E002E729B /* AboutNiec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B580DF61B5F811E002E729B /* AboutNiec.swift */; };
+		1B580DFA1B5F9BDA002E729B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B580DF91B5F9BDA002E729B /* Profile.swift */; };
+		1B580DFC1B5F9C11002E729B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B580DFB1B5F9C11002E729B /* CollectionViewCell.swift */; };
+		1B6223B31B62479D00902748 /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6223B21B62479D00902748 /* SocialTableViewController.swift */; };
+		1B6223B51B6247BD00902748 /* SocialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6223B41B6247BD00902748 /* SocialTableViewCell.swift */; };
+		1B645A701B618BFE00944805 /* EmailUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B645A6F1B618BFE00944805 /* EmailUs.swift */; };
+		1B645A721B61932B00944805 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B645A711B61932B00944805 /* MessageUI.framework */; };
+		1B693A7F1B6132F0007BD260 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B693A7E1B6132F0007BD260 /* ContactUs.swift */; };
+		1B693A811B613309007BD260 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B693A801B613309007BD260 /* MapKit.framework */; };
 		1B748C9F1B5E217600C2DD3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748C9E1B5E217600C2DD3B /* AppDelegate.swift */; };
 		1B748CA11B5E217600C2DD3B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748CA01B5E217600C2DD3B /* FirstViewController.swift */; };
-		1B748CA31B5E217600C2DD3B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748CA21B5E217600C2DD3B /* SecondViewController.swift */; };
 		1B748CA61B5E217600C2DD3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B748CA41B5E217600C2DD3B /* Main.storyboard */; };
 		1B748CA81B5E217700C2DD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B748CA71B5E217700C2DD3B /* Assets.xcassets */; };
 		1B748CAB1B5E217700C2DD3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B748CA91B5E217700C2DD3B /* LaunchScreen.storyboard */; };
 		1B748CB61B5E217700C2DD3B /* NIECTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748CB51B5E217700C2DD3B /* NIECTests.swift */; };
 		1B748CC11B5E217700C2DD3B /* NIECUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748CC01B5E217700C2DD3B /* NIECUITests.swift */; };
+		1B748CD01B5E628400C2DD3B /* ResourcesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748CCF1B5E628400C2DD3B /* ResourcesTableView.swift */; };
+		1B748CD21B5E62D200C2DD3B /* ResourcesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B748CD11B5E62D200C2DD3B /* ResourcesTableViewCell.swift */; };
+		1B80E8FA1B5ECF1600DC5FF5 /* ResourcesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B80E8F91B5ECF1600DC5FF5 /* ResourcesDetails.swift */; };
+		1BB333D41B629A5A00BF8EB7 /* SocialDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB333D31B629A5A00BF8EB7 /* SocialDetailsViewController.swift */; };
+		1BB333DF1B62E52800BF8EB7 /* BBDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB333DE1B62E52800BF8EB7 /* BBDTableViewController.swift */; };
+		1BB333E11B62E54000BF8EB7 /* BBDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB333E01B62E54000BF8EB7 /* BBDTableViewCell.swift */; };
+		1BB333E31B62E56000BF8EB7 /* BBDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB333E21B62E56000BF8EB7 /* BBDViewController.swift */; };
+		1BB333EF1B63004A00BF8EB7 /* bbd.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BB333EC1B63004A00BF8EB7 /* bbd.html */; };
+		1BB333F01B63004A00BF8EB7 /* alkadas.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BB333ED1B63004A00BF8EB7 /* alkadas.html */; };
+		1BB333F11B63004A00BF8EB7 /* akhilesh.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BB333EE1B63004A00BF8EB7 /* akhilesh.html */; };
+		1BCB5A911B65664C00A28DCB /* TPOTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB5A901B65664C00A28DCB /* TPOTableViewController.swift */; };
+		1BCB5A931B65666200A28DCB /* TPOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB5A921B65666200A28DCB /* TPOTableViewCell.swift */; };
+		1BCB5A951B65843500A28DCB /* TPOMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB5A941B65843500A28DCB /* TPOMailViewController.swift */; };
+		1BEE42211B6010EF00CCF70B /* ProfileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */; };
+		1BEE42231B601D0300CCF70B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE42221B601D0300CCF70B /* Social.framework */; };
+		1BEE42261B60372500CCF70B /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE42251B60372500CCF70B /* AboutUs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +59,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B580DF61B5F811E002E729B /* AboutNiec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNiec.swift; sourceTree = "<group>"; };
+		1B580DF91B5F9BDA002E729B /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1B580DFB1B5F9C11002E729B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1B6223B21B62479D00902748 /* SocialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
+		1B6223B41B6247BD00902748 /* SocialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialTableViewCell.swift; sourceTree = "<group>"; };
+		1B645A6F1B618BFE00944805 /* EmailUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailUs.swift; sourceTree = "<group>"; };
+		1B645A711B61932B00944805 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1B693A7E1B6132F0007BD260 /* ContactUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+		1B693A801B613309007BD260 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1B748C9B1B5E217600C2DD3B /* NIEC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIEC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B748C9E1B5E217600C2DD3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B748CA01B5E217600C2DD3B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1B748CA21B5E217600C2DD3B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1B748CA51B5E217600C2DD3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B748CA71B5E217700C2DD3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B748CAA1B5E217700C2DD3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +81,22 @@
 		1B748CBC1B5E217700C2DD3B /* NIECUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIECUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B748CC01B5E217700C2DD3B /* NIECUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIECUITests.swift; sourceTree = "<group>"; };
 		1B748CC21B5E217700C2DD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B748CCF1B5E628400C2DD3B /* ResourcesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesTableView.swift; sourceTree = "<group>"; };
+		1B748CD11B5E62D200C2DD3B /* ResourcesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewCell.swift; sourceTree = "<group>"; };
+		1B80E8F91B5ECF1600DC5FF5 /* ResourcesDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesDetails.swift; sourceTree = "<group>"; };
+		1BB333D31B629A5A00BF8EB7 /* SocialDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialDetailsViewController.swift; sourceTree = "<group>"; };
+		1BB333DE1B62E52800BF8EB7 /* BBDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBDTableViewController.swift; sourceTree = "<group>"; };
+		1BB333E01B62E54000BF8EB7 /* BBDTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBDTableViewCell.swift; sourceTree = "<group>"; };
+		1BB333E21B62E56000BF8EB7 /* BBDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBDViewController.swift; sourceTree = "<group>"; };
+		1BB333EC1B63004A00BF8EB7 /* bbd.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bbd.html; sourceTree = "<group>"; };
+		1BB333ED1B63004A00BF8EB7 /* alkadas.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = alkadas.html; sourceTree = "<group>"; usesTabs = 0; };
+		1BB333EE1B63004A00BF8EB7 /* akhilesh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = akhilesh.html; sourceTree = "<group>"; };
+		1BCB5A901B65664C00A28DCB /* TPOTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPOTableViewController.swift; sourceTree = "<group>"; };
+		1BCB5A921B65666200A28DCB /* TPOTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPOTableViewCell.swift; sourceTree = "<group>"; };
+		1BCB5A941B65843500A28DCB /* TPOMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPOMailViewController.swift; sourceTree = "<group>"; };
+		1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetails.swift; sourceTree = "<group>"; };
+		1BEE42221B601D0300CCF70B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1BEE42251B60372500CCF70B /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B645A721B61932B00944805 /* MessageUI.framework in Frameworks */,
+				1B693A811B613309007BD260 /* MapKit.framework in Frameworks */,
+				1BEE42231B601D0300CCF70B /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +127,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B580DF51B5F7D91002E729B /* AboutNIEC */ = {
+			isa = PBXGroup;
+			children = (
+				1B580DF61B5F811E002E729B /* AboutNiec.swift */,
+			);
+			name = AboutNIEC;
+			sourceTree = "<group>";
+		};
+		1B580DF81B5F99C8002E729B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1B580DF91B5F9BDA002E729B /* Profile.swift */,
+				1B580DFB1B5F9C11002E729B /* CollectionViewCell.swift */,
+				1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		1B6223B11B62473D00902748 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				1B6223B21B62479D00902748 /* SocialTableViewController.swift */,
+				1B6223B41B6247BD00902748 /* SocialTableViewCell.swift */,
+				1BB333D31B629A5A00BF8EB7 /* SocialDetailsViewController.swift */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		1B6223B61B625A5700902748 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1BB333EC1B63004A00BF8EB7 /* bbd.html */,
+				1BB333ED1B63004A00BF8EB7 /* alkadas.html */,
+				1BB333EE1B63004A00BF8EB7 /* akhilesh.html */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		1B693A7D1B6132CF007BD260 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				1B693A7E1B6132F0007BD260 /* ContactUs.swift */,
+				1B645A6F1B618BFE00944805 /* EmailUs.swift */,
+			);
+			name = ContactUs;
+			sourceTree = "<group>";
+		};
 		1B748C921B5E217600C2DD3B = {
 			isa = PBXGroup;
 			children = (
+				1B645A711B61932B00944805 /* MessageUI.framework */,
+				1B693A801B613309007BD260 /* MapKit.framework */,
+				1BEE42221B601D0300CCF70B /* Social.framework */,
 				1B748C9D1B5E217600C2DD3B /* NIEC */,
 				1B748CB41B5E217700C2DD3B /* NIECTests */,
 				1B748CBF1B5E217700C2DD3B /* NIECUITests */,
@@ -99,9 +200,17 @@
 		1B748C9D1B5E217600C2DD3B /* NIEC */ = {
 			isa = PBXGroup;
 			children = (
+				1BCB5A8D1B655E9700A28DCB /* TPO */,
+				1BB333DD1B62E4F800BF8EB7 /* BBDCampus */,
+				1B6223B61B625A5700902748 /* Utility */,
 				1B748C9E1B5E217600C2DD3B /* AppDelegate.swift */,
 				1B748CA01B5E217600C2DD3B /* FirstViewController.swift */,
-				1B748CA21B5E217600C2DD3B /* SecondViewController.swift */,
+				1BEE42241B6036C900CCF70B /* AboutUs */,
+				1B580DF81B5F99C8002E729B /* Profile */,
+				1B580DF51B5F7D91002E729B /* AboutNIEC */,
+				1B748CCE1B5E620400C2DD3B /* Resources */,
+				1B693A7D1B6132CF007BD260 /* ContactUs */,
+				1B6223B11B62473D00902748 /* Social */,
 				1B748CA41B5E217600C2DD3B /* Main.storyboard */,
 				1B748CA71B5E217700C2DD3B /* Assets.xcassets */,
 				1B748CA91B5E217700C2DD3B /* LaunchScreen.storyboard */,
@@ -126,6 +235,44 @@
 				1B748CC21B5E217700C2DD3B /* Info.plist */,
 			);
 			path = NIECUITests;
+			sourceTree = "<group>";
+		};
+		1B748CCE1B5E620400C2DD3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B748CCF1B5E628400C2DD3B /* ResourcesTableView.swift */,
+				1B748CD11B5E62D200C2DD3B /* ResourcesTableViewCell.swift */,
+				1B80E8F91B5ECF1600DC5FF5 /* ResourcesDetails.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1BB333DD1B62E4F800BF8EB7 /* BBDCampus */ = {
+			isa = PBXGroup;
+			children = (
+				1BB333DE1B62E52800BF8EB7 /* BBDTableViewController.swift */,
+				1BB333E01B62E54000BF8EB7 /* BBDTableViewCell.swift */,
+				1BB333E21B62E56000BF8EB7 /* BBDViewController.swift */,
+			);
+			name = BBDCampus;
+			sourceTree = "<group>";
+		};
+		1BCB5A8D1B655E9700A28DCB /* TPO */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB5A901B65664C00A28DCB /* TPOTableViewController.swift */,
+				1BCB5A921B65666200A28DCB /* TPOTableViewCell.swift */,
+				1BCB5A941B65843500A28DCB /* TPOMailViewController.swift */,
+			);
+			name = TPO;
+			sourceTree = "<group>";
+		};
+		1BEE42241B6036C900CCF70B /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE42251B60372500CCF70B /* AboutUs.swift */,
+			);
+			name = AboutUs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +342,7 @@
 				TargetAttributes = {
 					1B748C9A1B5E217600C2DD3B = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5WKGPLXT56;
 					};
 					1B748CB01B5E217700C2DD3B = {
 						CreatedOnToolsVersion = 7.0;
@@ -232,8 +380,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B748CAB1B5E217700C2DD3B /* LaunchScreen.storyboard in Resources */,
+				1BB333F11B63004A00BF8EB7 /* akhilesh.html in Resources */,
 				1B748CA81B5E217700C2DD3B /* Assets.xcassets in Resources */,
 				1B748CA61B5E217600C2DD3B /* Main.storyboard in Resources */,
+				1BB333F01B63004A00BF8EB7 /* alkadas.html in Resources */,
+				1BB333EF1B63004A00BF8EB7 /* bbd.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +409,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B748CA31B5E217600C2DD3B /* SecondViewController.swift in Sources */,
+				1B580DFA1B5F9BDA002E729B /* Profile.swift in Sources */,
+				1B645A701B618BFE00944805 /* EmailUs.swift in Sources */,
+				1B693A7F1B6132F0007BD260 /* ContactUs.swift in Sources */,
+				1BCB5A951B65843500A28DCB /* TPOMailViewController.swift in Sources */,
+				1B6223B31B62479D00902748 /* SocialTableViewController.swift in Sources */,
+				1BB333D41B629A5A00BF8EB7 /* SocialDetailsViewController.swift in Sources */,
+				1BEE42211B6010EF00CCF70B /* ProfileDetails.swift in Sources */,
+				1BEE42261B60372500CCF70B /* AboutUs.swift in Sources */,
+				1BCB5A931B65666200A28DCB /* TPOTableViewCell.swift in Sources */,
+				1B6223B51B6247BD00902748 /* SocialTableViewCell.swift in Sources */,
+				1B580DFC1B5F9C11002E729B /* CollectionViewCell.swift in Sources */,
+				1B748CD21B5E62D200C2DD3B /* ResourcesTableViewCell.swift in Sources */,
+				1BB333E11B62E54000BF8EB7 /* BBDTableViewCell.swift in Sources */,
+				1BB333E31B62E56000BF8EB7 /* BBDViewController.swift in Sources */,
+				1B748CD01B5E628400C2DD3B /* ResourcesTableView.swift in Sources */,
+				1BCB5A911B65664C00A28DCB /* TPOTableViewController.swift in Sources */,
+				1BB333DF1B62E52800BF8EB7 /* BBDTableViewController.swift in Sources */,
 				1B748C9F1B5E217600C2DD3B /* AppDelegate.swift in Sources */,
+				1B580DF71B5F811E002E729B /* AboutNiec.swift in Sources */,
+				1B80E8FA1B5ECF1600DC5FF5 /* ResourcesDetails.swift in Sources */,
 				1B748CA11B5E217600C2DD3B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,10 +569,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NIEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.ac.niec.NIEC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,10 +582,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NIEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.ac.niec.NIEC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -485,6 +658,7 @@
 				1B748CC71B5E217700C2DD3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B748CC81B5E217700C2DD3B /* Build configuration list for PBXNativeTarget "NIECTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +667,7 @@
 				1B748CCA1B5E217700C2DD3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B748CCB1B5E217700C2DD3B /* Build configuration list for PBXNativeTarget "NIECUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +676,7 @@
 				1B748CCD1B5E217700C2DD3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
