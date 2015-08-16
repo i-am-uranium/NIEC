@@ -11,7 +11,7 @@ import UIKit
 class SocialTableViewController: UITableViewController {
 
     let social = ["Facebook","Google","LinkedIn","Twitter","Website","Youtube"]
-    let socialUrl = ["http://www.facebook.com","http://www.google.com","http://www.linkedin.com","http://www.twitter.com","http://www.niec.ac.in","http://www.youtube.com"]
+    let socialUrl = ["http://www.facebook.com","http://www.google.com","http://www.linkedin.com","http://www.twitter.com","http://www.niecdelhi.ac.in","http://www.youtube.com"]
     let localUrl = ["alkadas","alkadas","alkadas","alkadas","alkadas","alkadas"]
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
@@ -27,6 +27,8 @@ class SocialTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

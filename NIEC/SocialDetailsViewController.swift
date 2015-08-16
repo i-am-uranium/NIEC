@@ -22,22 +22,31 @@ class SocialDetailsViewController: UIViewController {
         self.title = detailsTitle
         
         // loading the wbView
-//        let url = NSURL(string: urlText)
-//        let request = NSURLRequest(URL: url!)
-//        socialWebView.loadRequest(request)
+        let url = NSURL(string: urlText)
+        let request = NSURLRequest(URL: url!)
+        socialWebView.loadRequest(request)
         
         // loadfing the local html file
-        let myProjectBundle:NSBundle = NSBundle.mainBundle()
-        let filePath:String = myProjectBundle.pathForResource(localUrl, ofType: "html")!
-        let myUrl  = NSURL(string: filePath);
-        let myURLRequest : NSURLRequest = NSURLRequest(URL: myUrl!);
-        socialWebView.loadRequest(myURLRequest)
-        
-        
-        
+//        let myProjectBundle:NSBundle = NSBundle.mainBundle()
+//        let filePath:String = myProjectBundle.pathForResource(localUrl, ofType: "html")!
+//        let myUrl  = NSURL(string: filePath);
+//        let myURLRequest : NSURLRequest = NSURLRequest(URL: myUrl!);
+//        socialWebView.loadRequest(myURLRequest)
         
     }
+    
+    // controlling the background
+    func configureWebView() {
+        socialWebView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.4)
+        socialWebView.scalesPageToFit = true
+        socialWebView.dataDetectorTypes = .All
+    }
 
+    
+  
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -50,8 +59,10 @@ class SocialDetailsViewController: UIViewController {
     }
    
     
-    func webViewDidFinishLoad(_:UIWebView){
+    func webViewDidFinishLoad(webView:UIWebView){
         actInd.stopAnimating()
+        webView.layoutSubviews()
+        
     }
     /*
     // MARK: - Navigation
