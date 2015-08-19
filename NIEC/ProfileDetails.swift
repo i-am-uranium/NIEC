@@ -23,6 +23,8 @@ class ProfileDetails: UIViewController {
     }
 
     override func viewDidLoad() {
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: imageName as! String)!)
         self.facebookButton.layer.cornerRadius = 5.0
         self.twitterButton.layer.cornerRadius = 5.0

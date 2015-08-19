@@ -21,6 +21,8 @@ class BBDViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
         initialize()
     
     }

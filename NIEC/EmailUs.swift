@@ -20,6 +20,8 @@ class EmailUs: UIViewController, MFMailComposeViewControllerDelegate{
     override func viewDidLoad() {
         boarderAddingTofields()
         super.viewDidLoad()
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
         scroller.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)
     }
     

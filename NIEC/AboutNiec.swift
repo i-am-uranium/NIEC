@@ -25,7 +25,9 @@ class AboutNiec: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        
     }
     
     // all the outlets are initialized here

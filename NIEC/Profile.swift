@@ -29,7 +29,7 @@ class Profile: UIViewController,UICollectionViewDataSource,UICollectionViewDeleg
         navigationItem.backBarButtonItem = backButton
         self.title = "Profile"
         array = ["PortImage1","PortImage2","PortImage3","PortImage4","PortImage5","PortImage6","PortImage7","PortImage1","PortImage2","PortImage3","PortImage4","PortImage5","PortImage6","PortImage7","PortImage1","PortImage2","PortImage3","PortImage4","PortImage5","PortImage6","PortImage7","PortImage1","PortImage2","PortImage3","PortImage4","PortImage5","PortImage6","PortImage7",]
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         super.viewDidLoad()
         
         

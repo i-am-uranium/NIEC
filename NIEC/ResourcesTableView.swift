@@ -24,7 +24,7 @@ class ResourcesTableView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 100.0
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         //create a custom backbutton
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton

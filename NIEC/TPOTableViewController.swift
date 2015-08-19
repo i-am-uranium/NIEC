@@ -34,7 +34,9 @@ class TPOTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
        
     }
 

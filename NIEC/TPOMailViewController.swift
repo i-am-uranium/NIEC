@@ -17,12 +17,19 @@ class TPOMailViewController: UIViewController,MFMailComposeViewControllerDelegat
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var scroller: UIScrollView!
+    @IBOutlet weak var send: UIButton!
+    
+    
     var email:String!
     var userName:String!
     var emailAdd = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.send.layer.cornerRadius
+         = 5.0
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
         print(email)
         customizingTheFields()
         scroller.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)

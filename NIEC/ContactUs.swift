@@ -20,6 +20,7 @@ class ContactUs: UIViewController {
     
     @IBOutlet weak var socialLinksButton: UIButton!
     
+    @IBOutlet weak var tpoButton: UIButton!
     override func viewDidLoad() {
         mapImplementation()
         customizingView()
@@ -45,7 +46,7 @@ class ContactUs: UIViewController {
     
     // customizing the view
     func customizingView(){
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         self.mapView.layer.cornerRadius =
             self.mapView.frame.size.width / 5
         self.mapView.clipsToBounds = true
@@ -55,6 +56,7 @@ class ContactUs: UIViewController {
         self.emailUsButton.layer.cornerRadius = 5.0
         self.callUsButton.layer.cornerRadius = 5.0
         self.socialLinksButton.layer.cornerRadius = 5.0
+        self.tpoButton.layer.cornerRadius = 5.0
     }
 
     override func didReceiveMemoryWarning() {

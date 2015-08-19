@@ -17,7 +17,7 @@ class BBDTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
 

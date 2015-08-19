@@ -19,6 +19,8 @@ class SocialDetailsViewController: UIViewController {
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         super.viewDidLoad()
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
         self.title = detailsTitle
         
         // loading the wbView
