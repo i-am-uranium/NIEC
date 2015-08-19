@@ -9,23 +9,38 @@
 import UIKit
 
 class TPOTableViewController: UITableViewController {
-        let array = [("Mr. Aviag Kamal","Head - Training & Placement")]
-    let core = [("Mr. Rajesh Yadav","IT"),("Ms. Tanvi Rustagi","CSE"),("Ms. Monica Dubey","EEE"),
-        ("Ms. Shipra Varshney","MCA"),("Mr. Ram Prakash","MAE"),("Mr. Kamal Singh","ECE"),("Ms. Ashima Kapooer","MBA")]
+    
+    let array = [("Mr. Aviag Kamal","Head - Training & Placement")]
+    
+    let core = [
+        ("Mr. Rajesh Yadav","IT"),
+        ("Ms. Tanvi Rustagi","CSE"),
+        ("Ms. Monica Dubey","EEE"),
+        ("Ms. Shipra Varshney","MCA"),
+        ("Mr. Ram Prakash","MAE"),
+        ("Mr. Kamal Singh","ECE"),
+        ("Ms. Ashima Kapooer","MBA")]
+    
+    let emailArray = [
+        "rajesh.yadav@niecdelhi.ac.in",
+        "tanvi.rustagi@niecdelhi.ac.in",
+        "monika.dubey@niecdelhi.ac.in",
+        "shipra.varshney@niecdelhi.ac.in",
+        "jamuna.narayanan@niecdelhi.ac.in",
+        "ram.prakash@niecdelhi.ac.in",
+        "kamal.singh@niecdelhi.ac.in"]
+    
+    let sectionZeroUrl = ["tpo@niecdelhi.ac.in"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
     }
 
     // MARK: - Table view data source
@@ -53,7 +68,7 @@ class TPOTableViewController: UITableViewController {
         
             cell.tpoTitle.text = kamal
             cell.tpoSubtitle.text = head
-
+            
         }else{
             let (coreMember,coreSub) = core[indexPath.item]
             cell.tpoTitle.text = coreMember
@@ -66,9 +81,7 @@ class TPOTableViewController: UITableViewController {
         }else{
             cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
         }
-        
-    cell.mail.layer.cornerRadius = cell.mail.frame.size.width / 2
-        cell.mail.clipsToBounds = true
+
         return cell
     }
   
@@ -76,6 +89,7 @@ class TPOTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         //for table view header
+        // heading for the table
         
         if section == 0{
             return "Training & Placement Officer"}
@@ -118,14 +132,36 @@ class TPOTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if(segue.identifier == "mailVIewIdenty")
+        {
+            let vc = segue.destinationViewController as! TPOMailViewController
+            
+                if let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+                {
+                    if(indexPath.section == 0)
+                        {
+                            
+                            let email = sectionZeroUrl[indexPath.row] as String
+                            let (username,_) = array[indexPath.row]
+                            vc.userName = username
+                            vc.email = email
+                        }
+                    else
+                    {
+                        let email = emailArray[indexPath.row] as String
+                        let (_,usernameSectionTwo) = core[indexPath.row]
+                        vc.userName = usernameSectionTwo
+                        vc.email = email
+                       
+                    }
+               }
+                
+        }
+   }
+
 
 }

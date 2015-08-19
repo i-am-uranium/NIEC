@@ -11,10 +11,16 @@ import UIKit
 class SocialTableViewController: UITableViewController {
 
     let social = ["Facebook","Google","LinkedIn","Twitter","Website","Youtube"]
-    let socialUrl = ["http://www.facebook.com","http://www.google.com","http://www.linkedin.com","http://www.twitter.com","http://www.niecdelhi.ac.in","http://www.youtube.com"]
+    let socialUrl = [
+        "http://www.facebook.com/niecnewdelhi",
+        "http://www.google.com",
+        "http://www.linkedin.com",
+        "https://twitter.com/niec_nd/",
+        "http://www.niecdelhi.ac.in",
+        "http://www.youtube.com"]
     let localUrl = ["alkadas","alkadas","alkadas","alkadas","alkadas","alkadas"]
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
        // navigationController?.navigationBar.backgroundColor = UIColor.blueColor()
         super.viewDidLoad()
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)

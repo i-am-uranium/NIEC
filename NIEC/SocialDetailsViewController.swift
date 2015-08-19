@@ -59,9 +59,9 @@ class SocialDetailsViewController: UIViewController {
     }
    
     
-    func webViewDidFinishLoad(webView:UIWebView){
+    func webViewDidFinishLoad(_:UIWebView){
         actInd.stopAnimating()
-        webView.layoutSubviews()
+        
         
     }
     /*

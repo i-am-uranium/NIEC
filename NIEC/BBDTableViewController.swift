@@ -13,10 +13,11 @@ class BBDTableViewController: UITableViewController {
     let bbd = ["BBDGEI Group Profile","Late Babu Banaras Das Ji","Dr. Akhilesh Das Gupta","Mrs. Alka Das Gupta"]
     let bbdimg = ["bbd","babu","akhilesh","alka"]
     let timgTitle = ["hola","(1912-1985)","LLB, MBA, Ph. D.","LLB, MBA"]
-    let url = ["bbd","alkadas","akhilesh","bbd"]
+    let url = ["bbd","alkadas","akhilesh","alkadas"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
 

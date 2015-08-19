@@ -45,7 +45,7 @@ class ContactUs: UIViewController {
     
     // customizing the view
     func customizingView(){
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
         self.mapView.layer.cornerRadius =
             self.mapView.frame.size.width / 5
         self.mapView.clipsToBounds = true

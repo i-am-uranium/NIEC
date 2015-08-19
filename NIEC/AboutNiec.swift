@@ -41,7 +41,7 @@ class AboutNiec: UIViewController {
         
         
         self.scroller.contentInset = UIEdgeInsetsMake(0, 0, 600, 0)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "niec_back")!)
         
     }
     

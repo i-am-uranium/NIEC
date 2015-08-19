@@ -7,22 +7,55 @@
 //
 
 import UIKit
+import MessageUI
 
-class TPOMailViewController: UIViewController {
+class TPOMailViewController: UIViewController,MFMailComposeViewControllerDelegate {
 
-    @IBOutlet weak var sendButton: UIButton!
-    @IBOutlet weak var messageField: UILabel!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet weak var messageField: UITextView!
     @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var scroller: UIScrollView!
+    var email:String!
+    var userName:String!
+    var emailAdd = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(email)
         customizingTheFields()
         scroller.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)
-
-        // Do any additional setup after loading the view.
+        switch(userName)
+        {
+        case "Mr. Aviag Kamal":
+            emailAdd.append("tpo@niecdelhi.ac.in")
+            break
+        case "IT":
+            emailAdd.append("rajesh.yadav@niecdelhi.ac.in")
+            break
+        case "CSE":
+            emailAdd.append("tanvi.rustagi@niecdelhi.ac.in")
+            break
+        case "EEE":
+            emailAdd.append("monika.dubey@niecdelhi.ac.in")
+            break
+        case"MCA":
+            emailAdd.append("shipra.varshney@niecdelhi.ac.in")
+            break
+        case "MAE":
+            emailAdd.append("jamuna.narayanan@niecdelhi.ac.in")
+            break
+        case "ECE":
+            emailAdd.append("ram.prakash@niecdelhi.ac.in")
+            break
+        case "MBA":
+            emailAdd.append("kamal.singh@niecdelhi.ac.in")
+            break
+        default:
+            print("SomeKind of  Error")
+            
+        }
     }
 
     
@@ -50,7 +83,51 @@ class TPOMailViewController: UIViewController {
     }
     
     
+    @IBAction func sendMail(sender: AnyObject) {
+       // let EMAIL = email
+        let emailTitle = "Contact Form From" + nameField.text!
+        let messageBody = "Name: " + nameField.text! + "\nPhone: " + phoneNumberField.text! + "\nEmail: " + emailField.text! + "\n\nMessage: \n" + messageField.text!
+        //let toRecipents = [EMAIL]
+        let mc  :MFMailComposeViewController = MFMailComposeViewController()
+        mc.mailComposeDelegate = self
+        mc.setSubject(emailTitle)
+        mc.setMessageBody(messageBody, isHTML: false)
+        print(emailAdd)
+        mc.setToRecipients(emailAdd)
+        self.presentViewController(mc, animated: true, completion: nil)
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        switch result.rawValue {
+        case MFMailComposeResultCancelled.rawValue :
+            print("mail has been cancel")
+        case MFMailComposeResultSaved.rawValue :
+            print("mail has been save")
+        case MFMailComposeResultFailed.rawValue :
+            print("mail has been Failed %@",[error?.localizedDescription])
+        case MFMailComposeResultSent.rawValue :
+            print("mail has been sent")
+        default:
+            break
+        }
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
+    
+    
+    @IBAction func dissmissKeyboard(sender: AnyObject) {
+        self.resignFirstResponder()
+    }
+    
+    // function to resign te keyboard fromthe textView
+    func textView(textView : UITextView, text: String) -> Bool{
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
     /*
     // MARK: - Navigation
 
