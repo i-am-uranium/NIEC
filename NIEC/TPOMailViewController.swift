@@ -17,8 +17,9 @@ class TPOMailViewController: UIViewController,MFMailComposeViewControllerDelegat
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var scroller: UIScrollView!
-    @IBOutlet weak var send: UIButton!
+
     
+    @IBOutlet weak var send: UIButton!
     
     var email:String!
     var userName:String!
@@ -26,10 +27,7 @@ class TPOMailViewController: UIViewController,MFMailComposeViewControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.send.layer.cornerRadius
-         = 5.0
-        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
-        navigationItem.backBarButtonItem = backButton
+       
         print(email)
         customizingTheFields()
         scroller.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)
@@ -67,14 +65,17 @@ class TPOMailViewController: UIViewController,MFMailComposeViewControllerDelegat
 
     
     func customizingTheFields(){
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
+        
         self.messageField.layer.cornerRadius = 5.0
         self.messageField.layer.borderColor = UIColor.grayColor().CGColor
         self.messageField.layer.borderWidth = 0.25
         self.nameField.layer.borderColor = UIColor.grayColor().CGColor
         self.phoneNumberField.layer.borderColor = UIColor.grayColor().CGColor
         self.emailField.layer.borderColor = UIColor.grayColor().CGColor
-        self.sendButton.layer.cornerRadius = 2.0
+        self.send.layer.cornerRadius = 2.0
     
     }
     override func didReceiveMemoryWarning() {

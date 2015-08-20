@@ -39,6 +39,7 @@
 		1BEE42211B6010EF00CCF70B /* ProfileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */; };
 		1BEE42231B601D0300CCF70B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE42221B601D0300CCF70B /* Social.framework */; };
 		1BEE42261B60372500CCF70B /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE42251B60372500CCF70B /* AboutUs.swift */; };
+		FAD8197C1B862519004C32A6 /* babu.html in Resources */ = {isa = PBXBuildFile; fileRef = FAD8197B1B862519004C32A6 /* babu.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetails.swift; sourceTree = "<group>"; };
 		1BEE42221B601D0300CCF70B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1BEE42251B60372500CCF70B /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		FAD8197B1B862519004C32A6 /* babu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = babu.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		1B6223B61B625A5700902748 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FAD8197B1B862519004C32A6 /* babu.html */,
 				1BB333EC1B63004A00BF8EB7 /* bbd.html */,
 				1BB333ED1B63004A00BF8EB7 /* alkadas.html */,
 				1BB333EE1B63004A00BF8EB7 /* akhilesh.html */,
@@ -383,6 +386,7 @@
 				1BB333F11B63004A00BF8EB7 /* akhilesh.html in Resources */,
 				1B748CA81B5E217700C2DD3B /* Assets.xcassets in Resources */,
 				1B748CA61B5E217600C2DD3B /* Main.storyboard in Resources */,
+				FAD8197C1B862519004C32A6 /* babu.html in Resources */,
 				1BB333F01B63004A00BF8EB7 /* alkadas.html in Resources */,
 				1BB333EF1B63004A00BF8EB7 /* bbd.html in Resources */,
 			);

@@ -12,8 +12,8 @@ class BBDTableViewController: UITableViewController {
     
     let bbd = ["BBDGEI Group Profile","Late Babu Banaras Das Ji","Dr. Akhilesh Das Gupta","Mrs. Alka Das Gupta"]
     let bbdimg = ["bbd","babu","akhilesh","alka"]
-    let timgTitle = ["hola","(1912-1985)","LLB, MBA, Ph. D.","LLB, MBA"]
-    let url = ["bbd","alkadas","akhilesh","alkadas"]
+    let timgTitle = ["","(1912-1985)","LLB, MBA, Ph. D.","LLB, MBA"]
+    let url = ["bbd","babu","akhilesh","alkadas"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
