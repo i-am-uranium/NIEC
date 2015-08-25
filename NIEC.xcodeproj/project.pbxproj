@@ -39,7 +39,11 @@
 		1BEE42211B6010EF00CCF70B /* ProfileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */; };
 		1BEE42231B601D0300CCF70B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE42221B601D0300CCF70B /* Social.framework */; };
 		1BEE42261B60372500CCF70B /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE42251B60372500CCF70B /* AboutUs.swift */; };
+		FA7576611B8CF4140005F03F /* LatestEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7576601B8CF4140005F03F /* LatestEventTableViewController.swift */; };
+		FA7576631B8CF43D0005F03F /* LatestEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7576621B8CF43D0005F03F /* LatestEventTableViewCell.swift */; };
+		FA7576651B8CF7470005F03F /* ApiDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7576641B8CF7470005F03F /* ApiDataModel.swift */; };
 		FAD8197C1B862519004C32A6 /* babu.html in Resources */ = {isa = PBXBuildFile; fileRef = FAD8197B1B862519004C32A6 /* babu.html */; };
+		FAE227931B8D062C00CE2FA9 /* NoticeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE227921B8D062C00CE2FA9 /* NoticeDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +102,11 @@
 		1BEE42201B6010EF00CCF70B /* ProfileDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetails.swift; sourceTree = "<group>"; };
 		1BEE42221B601D0300CCF70B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1BEE42251B60372500CCF70B /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		FA7576601B8CF4140005F03F /* LatestEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestEventTableViewController.swift; sourceTree = "<group>"; };
+		FA7576621B8CF43D0005F03F /* LatestEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestEventTableViewCell.swift; sourceTree = "<group>"; };
+		FA7576641B8CF7470005F03F /* ApiDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDataModel.swift; sourceTree = "<group>"; };
 		FAD8197B1B862519004C32A6 /* babu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = babu.html; sourceTree = "<group>"; };
+		FAE227921B8D062C00CE2FA9 /* NoticeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,7 @@
 		1B748C9D1B5E217600C2DD3B /* NIEC */ = {
 			isa = PBXGroup;
 			children = (
+				FA75765F1B8CF3C10005F03F /* LatestEvents */,
 				1BCB5A8D1B655E9700A28DCB /* TPO */,
 				1BB333DD1B62E4F800BF8EB7 /* BBDCampus */,
 				1B6223B61B625A5700902748 /* Utility */,
@@ -276,6 +285,17 @@
 				1BEE42251B60372500CCF70B /* AboutUs.swift */,
 			);
 			name = AboutUs;
+			sourceTree = "<group>";
+		};
+		FA75765F1B8CF3C10005F03F /* LatestEvents */ = {
+			isa = PBXGroup;
+			children = (
+				FA7576641B8CF7470005F03F /* ApiDataModel.swift */,
+				FA7576601B8CF4140005F03F /* LatestEventTableViewController.swift */,
+				FA7576621B8CF43D0005F03F /* LatestEventTableViewCell.swift */,
+				FAE227921B8D062C00CE2FA9 /* NoticeDetailsViewController.swift */,
+			);
+			name = LatestEvents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,18 +438,22 @@
 				1B693A7F1B6132F0007BD260 /* ContactUs.swift in Sources */,
 				1BCB5A951B65843500A28DCB /* TPOMailViewController.swift in Sources */,
 				1B6223B31B62479D00902748 /* SocialTableViewController.swift in Sources */,
+				FA7576631B8CF43D0005F03F /* LatestEventTableViewCell.swift in Sources */,
 				1BB333D41B629A5A00BF8EB7 /* SocialDetailsViewController.swift in Sources */,
 				1BEE42211B6010EF00CCF70B /* ProfileDetails.swift in Sources */,
 				1BEE42261B60372500CCF70B /* AboutUs.swift in Sources */,
 				1BCB5A931B65666200A28DCB /* TPOTableViewCell.swift in Sources */,
+				FA7576651B8CF7470005F03F /* ApiDataModel.swift in Sources */,
 				1B6223B51B6247BD00902748 /* SocialTableViewCell.swift in Sources */,
 				1B580DFC1B5F9C11002E729B /* CollectionViewCell.swift in Sources */,
 				1B748CD21B5E62D200C2DD3B /* ResourcesTableViewCell.swift in Sources */,
 				1BB333E11B62E54000BF8EB7 /* BBDTableViewCell.swift in Sources */,
 				1BB333E31B62E56000BF8EB7 /* BBDViewController.swift in Sources */,
 				1B748CD01B5E628400C2DD3B /* ResourcesTableView.swift in Sources */,
+				FA7576611B8CF4140005F03F /* LatestEventTableViewController.swift in Sources */,
 				1BCB5A911B65664C00A28DCB /* TPOTableViewController.swift in Sources */,
 				1BB333DF1B62E52800BF8EB7 /* BBDTableViewController.swift in Sources */,
+				FAE227931B8D062C00CE2FA9 /* NoticeDetailsViewController.swift in Sources */,
 				1B748C9F1B5E217600C2DD3B /* AppDelegate.swift in Sources */,
 				1B580DF71B5F811E002E729B /* AboutNiec.swift in Sources */,
 				1B80E8FA1B5ECF1600DC5FF5 /* ResourcesDetails.swift in Sources */,

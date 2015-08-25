@@ -31,7 +31,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="dj2-ms-Qnt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="niec_campus" translatesAutoresizingMaskIntoConstraints="NO" id="dj2-ms-Qnt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <animations/>
                                 <constraints>
@@ -59,7 +59,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="login" width="784" height="1320"/>
         <image name="logo" width="211" height="233"/>
+        <image name="niec_campus" width="512" height="512"/>
     </resources>
 </document>
