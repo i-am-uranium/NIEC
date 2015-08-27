@@ -61,7 +61,7 @@ class ProfileDetails: UIViewController {
     
     // Social Link Integration
     
-    
+    // Facebook integration
     @IBAction func facebook(sender: AnyObject) {
         //check if the facebok service is availble
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)
@@ -84,6 +84,7 @@ class ProfileDetails: UIViewController {
         
     }
     
+    // twitter integration
     @IBAction func twitter(sender: AnyObject) {
         
         //check if the twitter service is availble

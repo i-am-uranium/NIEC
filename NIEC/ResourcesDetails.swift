@@ -36,7 +36,7 @@ class ResourcesDetails: UIViewController {
     
     
     
-    //func to avoid ambuguish
+    //func to avoid ambi.
     func widgetFunctions(){
         label.text = resourceTitle
         self.title = resourceTitle

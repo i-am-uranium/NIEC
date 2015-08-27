@@ -56,6 +56,9 @@ class Profile: UIViewController,UICollectionViewDataSource,UICollectionViewDeleg
         return array.count
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        imageName = array[indexPath.row]
+    }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CollectionViewCell
@@ -69,9 +72,7 @@ class Profile: UIViewController,UICollectionViewDataSource,UICollectionViewDeleg
     }
     
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        imageName = array[indexPath.row]
-    }
+    
     
     
 

@@ -44,23 +44,15 @@ class SocialDetailsViewController: UIViewController {
         socialWebView.dataDetectorTypes = .All
     }
 
-    
-  
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     func webViewDidStartLoad(_:UIWebView){
     actInd.startAnimating()
     }
-   
-    
+       
     func webViewDidFinishLoad(_:UIWebView){
         actInd.stopAnimating()
         
