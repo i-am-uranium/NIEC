@@ -8,32 +8,55 @@
 
 import Foundation
 
+
 class NewsModel {
     var titles = [String]()
     var endDat = [String]()
     var eventDet = [String]()
+    
     let urlString = "http://www.niecdelhi.ac.in/api/events.php"
+    
     func fetchItems (success:() -> ()){
-        let url = NSURL(string: urlString)
+    let url = NSURL(string: urlString)
+    
+    let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+    let task = session.dataTaskWithURL(url!) {(data, response, error) in
+    do {
+    
+        let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSArray
+    
         
-        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        let task = session.dataTaskWithURL(url!) {(data, response, error) in
-            do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSArray
-                
-                self.titles = json.valueForKeyPath("event_title") as! [String]
-                self.endDat = json.valueForKey("event_end_date") as! [String]
-                self.eventDet = json.valueForKey("event_full") as! [String]
-                print(self.titles + self.endDat + self.eventDet)
-                
-                success()
-            }catch{
-                print(error)
-            }
-        }
+     
+        
+        
+        self.titles = json.valueForKeyPath("event_title") as! [String]
+    
+        self.endDat = json.valueForKey("event_end_date") as! [String]
+    
+        self.eventDet = json.valueForKey("event_full") as! [String]
+    
+        print(self.titles + self.endDat + self.eventDet)
+    
+        success()
+    
+    }catch{
+        print(error)
+        print( "Something went wrong!")
+        
+    
+    
+    }
+    }
         task.resume()
     }
+
+ 
     
+    
+    
+    
+    
+
     func numberOfSections() -> Int {
         return 1
         

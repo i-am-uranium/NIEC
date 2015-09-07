@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        //Parse.enableLocalDatastore()
+       
+        Parse.setApplicationId("OZUO20LAYm3LrJskaRd8Q7AvjMA5SOH5nHKwD29G",
+            clientKey: "IvMgGOhFzszg5DExirImNzyP2Ry8mvPIIrMx13aE")
         
+        
+       // PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
        //custom color for the tabbar item icons
         
         let color = UIColor(red: 194/255, green: 0/255, blue: 4/255, alpha: 1.0)

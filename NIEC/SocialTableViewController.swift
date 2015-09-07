@@ -20,7 +20,7 @@ class SocialTableViewController: UITableViewController {
         "http://www.youtube.com"]
     let localUrl = ["alkadas","alkadas","alkadas","alkadas","alkadas","alkadas"]
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "new")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
        // navigationController?.navigationBar.backgroundColor = UIColor.blueColor()
         super.viewDidLoad()
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)

@@ -30,6 +30,9 @@ class NoticeDetailsViewController: UIViewController {
        
     }
 
+    func webViewDidStartLoad(noticeWebView:UIWebView){
+        actInd.startAnimating()
+    }
     
     
     func configureWebView() {
@@ -39,12 +42,10 @@ class NoticeDetailsViewController: UIViewController {
     }
     
     
-    func webViewDidStartLoad(_:UIWebView){
-        actInd.startAnimating()
-    }
+   
     
     
-    func webViewDidFinishLoad(_:UIWebView){
+    func webViewDidFinishLoad(noticeWebView:UIWebView){
         actInd.stopAnimating()
         
         

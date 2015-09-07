@@ -3,9 +3,12 @@
 //
 
 import UIKit
+import Parse
 
 class FirstViewController: UIViewController {
     
+//    var color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
+//    var color2 = UIColor(netHex:0x211c32)
     
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var studentSectionButton: UIButton!
@@ -17,13 +20,20 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // parse test
+        
+       
+        
+        
      //   animateImage()
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
         buttonRadius()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+   
     
     // to make an animating imageView
     
@@ -42,6 +52,10 @@ class FirstViewController: UIViewController {
     
     func buttonRadius(){
         // setting the background of the main home page
+        
+        
+//        self.view.backgroundColor = color2
+        
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         //making the rounded corners of the buttons
         studentSectionButton.layer.cornerRadius = 5

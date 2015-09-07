@@ -13,19 +13,25 @@ class News: UITableViewController {
    var newsModel = NewsModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        newsModel.fetchItems {
+                dispatch_async(dispatch_get_main_queue()){
+                    print("Internet connection OK")
+                    self.tableView.reloadData()
+                 }
+            }
+            
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "new")!)
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
-        newsModel.fetchItems {
-            dispatch_async(dispatch_get_main_queue()){
-                self.tableView.reloadData()
-            }
-        }
+        
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
         return newsModel.numberOfSections()
     }
 
@@ -54,6 +60,13 @@ class News: UITableViewController {
     func confugureCell(cell:NewsCell,atIndexPath indexPath:NSIndexPath){
         cell.newsTitle.text = newsModel.titleForItemAtIndexPath(indexPath)
         cell.endDate.text = newsModel.dateForIndex(indexPath)
+//        if(newsModel.dateForIndex(indexPath) == nil){
+//        
+//            
+//            let alert:UIAlertController = UIAlertController(title: "Error...", message: "Somthng went wrong retry later", preferredStyle: UIAlertControllerStyle.Alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+//            self.presentViewController(alert, animated: true, completion: nil)
+//        }
     }
    
     // MARK: - Navigation

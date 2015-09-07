@@ -36,7 +36,7 @@ class TPOTableViewController: UITableViewController {
         super.viewDidLoad()
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "new")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
        
     }
 
@@ -129,6 +129,5 @@ class TPOTableViewController: UITableViewController {
                 
         }
    }
-
 
 }
