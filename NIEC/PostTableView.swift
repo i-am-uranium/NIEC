@@ -10,14 +10,7 @@ import UIKit
 import Parse
 
 class PostTableView: UITableViewController {
-    
-    
-    
-    
-    
-
-
-    override func viewDidAppear(animated: Bool) {
+   override func viewDidAppear(animated: Bool) {
         if !(PFUser.currentUser() != nil)
         {
             let loginAlert: UIAlertController = UIAlertController(title: "Sign Up or Login", message: "Please Sign Up Or Login", preferredStyle: UIAlertControllerStyle.Alert)

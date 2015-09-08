@@ -52,6 +52,7 @@
 		FAA82DF91B98F4B500DDE98E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA82DF81B98F4B500DDE98E /* PostTableViewCell.swift */; };
 		FAA82DFB1B98F4CE00DDE98E /* PostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA82DFA1B98F4CE00DDE98E /* PostDetails.swift */; };
 		FAAA5EE61B95970900750A38 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA5EE51B95970900750A38 /* Reachability.swift */; };
+		FAB51A861B9F8EE3004F16AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB51A851B9F8EE3004F16AF /* SignUpViewController.swift */; };
 		FAB8D0341B98E7ED005DF2AE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8D0321B98E7ED005DF2AE /* libsqlite3.0.tbd */; };
 		FAB8D0351B98E7ED005DF2AE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8D0331B98E7ED005DF2AE /* libsqlite3.tbd */; };
 		FACC8F291B98E08D00E9F684 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACC8F281B98E08D00E9F684 /* Bolts.framework */; };
@@ -139,6 +140,7 @@
 		FAA82DF81B98F4B500DDE98E /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FAA82DFA1B98F4CE00DDE98E /* PostDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetails.swift; sourceTree = "<group>"; };
 		FAAA5EE51B95970900750A38 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FAB51A851B9F8EE3004F16AF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FAB8D0321B98E7ED005DF2AE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FAB8D0331B98E7ED005DF2AE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FACC8F281B98E08D00E9F684 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		1B748C9D1B5E217600C2DD3B /* NIEC */ = {
 			isa = PBXGroup;
 			children = (
+				FAB51A871B9F8EED004F16AF /* PostSOmething */,
 				FAA82DF71B98F49500DDE98E /* Post */,
 				FA8E09B81B8E44E90089A4DA /* News */,
 				FA75765F1B8CF3C10005F03F /* LatestEvents */,
@@ -293,7 +296,6 @@
 				1B748CA71B5E217700C2DD3B /* Assets.xcassets */,
 				1B748CA91B5E217700C2DD3B /* LaunchScreen.storyboard */,
 				1B748CAC1B5E217700C2DD3B /* Info.plist */,
-				FA16E12B1B9E3792005B7304 /* PostSomething.swift */,
 			);
 			path = NIEC;
 			sourceTree = "<group>";
@@ -384,6 +386,15 @@
 				FAA82DFA1B98F4CE00DDE98E /* PostDetails.swift */,
 			);
 			name = Post;
+			sourceTree = "<group>";
+		};
+		FAB51A871B9F8EED004F16AF /* PostSOmething */ = {
+			isa = PBXGroup;
+			children = (
+				FA16E12B1B9E3792005B7304 /* PostSomething.swift */,
+				FAB51A851B9F8EE3004F16AF /* SignUpViewController.swift */,
+			);
+			name = PostSOmething;
 			sourceTree = "<group>";
 		};
 		FACC8F271B98E06400E9F684 /* Framworks */ = {
@@ -552,6 +563,7 @@
 				FA8E09BC1B8E45460089A4DA /* NewsCell.swift in Sources */,
 				1B645A701B618BFE00944805 /* EmailUs.swift in Sources */,
 				1B693A7F1B6132F0007BD260 /* ContactUs.swift in Sources */,
+				FAB51A861B9F8EE3004F16AF /* SignUpViewController.swift in Sources */,
 				1BCB5A951B65843500A28DCB /* TPOMailViewController.swift in Sources */,
 				1B6223B31B62479D00902748 /* SocialTableViewController.swift in Sources */,
 				FA7576631B8CF43D0005F03F /* LatestEventTableViewCell.swift in Sources */,

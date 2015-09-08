@@ -9,42 +9,84 @@
 import UIKit
 
 class PostSomething: UIViewController {
-
+    
+    @IBOutlet var signUpButton: UIButton!
+    @IBOutlet var loginButton: UIButton!
+    @IBOutlet var passwordField: UITextField!
     @IBOutlet var username: UITextField!
-    var color = UIColor(netHex:0x211c32)
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = color
-        leftIconadd("ic_person_36pt",fieldName: username)
+        loginEditView()
+      
         
-        
-        
-        
-        
-        
-
-        // Do any additional setup after loading the view.
     }
     
     
-    
-    func leftIconadd(icon:String,fieldName:UITextField)->Void{
+    @IBAction func loginAction(sender: AnyObject) {
         
-        let imageView = UIImageView();
+        if username.text!.isEmpty || passwordField.text!.isEmpty{
+            print("One or more fields are empty")
         
-        let image = UIImage(named: "icon");
+        }else{
+            let USERNAME = username.text
+            let PASSWORD = passwordField.text
+            PFUser.logInWithUsernameInBackground(USERNAME! , password:PASSWORD!) {
+                (user: PFUser?, error: NSError?) -> Void in
+                if user != nil {
+                    print("login succesful")
+                    // Do stuff after successful login.
+                } else {
+                    print("login error!")
+                    // do something to handle error
+                }
+            }
+        }
         
-        imageView.image = image;
-        
-        imageView.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
-        
-        view.addSubview(imageView)
-        
-        fieldName.leftView = imageView;
-        
-        fieldName.leftViewMode = UITextFieldViewMode.Always
     }
+    
+    func loginEditView(){
+        self.view.backgroundColor = UIColor(netHex:0x211c32)
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        editTestFields(passwordField)
+        editTestFields(username)
+        buttonField(loginButton,colors: UIColor(netHex: 0x01bad4))
+        buttonField(signUpButton,colors: UIColor(netHex: 0xf6546a))
+        
+        let imageView1 = UIImageView();
+        let image1 = UIImage(named: "ic_person_white_36pt");
+        imageView1.image = image1;
+        imageView1.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView1)
+        username.leftView = imageView1;
+        username.leftViewMode = UITextFieldViewMode.Always
+        
+        
+        let imageView2 = UIImageView();
+        let image2 = UIImage(named: "ic_lock_white_36pt");
+        imageView2.image = image2;
+        imageView2.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView2)
+        passwordField.leftView = imageView2;
+        passwordField.leftViewMode = UITextFieldViewMode.Always
+        
+        
+    }
+    func buttonField(buttonField:UIButton,colors:UIColor){
+        buttonField.backgroundColor = colors
+        buttonField.layer.cornerRadius = 2.0
+        buttonField.layer.borderWidth = 0.5
+        
+    }
+    func editTestFields(field: UITextField){
+        field.layer.cornerRadius = 2.0
+        field.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+        field.layer.borderWidth = 0.5
+        field.layer.borderColor = UIColor.whiteColor().CGColor
+   }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

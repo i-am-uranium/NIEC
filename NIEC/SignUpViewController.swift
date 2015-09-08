@@ -1,0 +1,109 @@
+//
+//  SignUpViewController.swift
+//  NIEC
+//
+//  Created by Ravi Ranjan on 08/09/15.
+//  Copyright © 2015 Ravi Ranjan. All rights reserved.
+//
+
+import UIKit
+
+class SignUpViewController: UIViewController {
+    
+    
+    @IBOutlet var signUpButton: UIButton!
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var userName: UITextField!
+    @IBOutlet var branch: UITextField!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewEditing()
+
+        
+    }
+    @IBAction func signUp(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    func viewEditing(){
+        self.view.backgroundColor = UIColor(netHex:0x211c32)
+        editTestFields(email)
+        editTestFields(password)
+        editTestFields(userName)
+        editTestFields(branch)
+        buttonField(signUpButton,colors: UIColor(netHex: 0xf6546a))
+        signUpEdit()
+    }
+
+    
+    
+    func editTestFields(field: UITextField){
+        field.layer.cornerRadius = 2.0
+        field.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+        field.layer.borderWidth = 0.5
+        field.layer.borderColor = UIColor.whiteColor().CGColor
+    }
+    
+    
+    func buttonField(buttonField:UIButton,colors:UIColor){
+        buttonField.backgroundColor = colors
+        buttonField.layer.cornerRadius = 2.0
+        buttonField.layer.borderWidth = 0.5
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    func signUpEdit(){
+        
+        let imageView1 = UIImageView();
+        let image1 = UIImage(named: "ic_person_white_36pt");
+        imageView1.image = image1;
+        imageView1.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView1)
+        email.leftView = imageView1;
+        email.leftViewMode = UITextFieldViewMode.Always
+        
+        
+        let imageView2 = UIImageView();
+        let image2 = UIImage(named: "ic_lock_white_36pt");
+        imageView2.image = image2;
+        imageView2.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView2)
+        password.leftView = imageView2;
+        password.leftViewMode = UITextFieldViewMode.Always
+        
+        let imageView3 = UIImageView();
+        let image3 = UIImage(named: "ic_lock_white_36pt");
+        imageView3.image = image3;
+        imageView3.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView3)
+        userName.leftView = imageView3;
+        userName.leftViewMode = UITextFieldViewMode.Always
+        
+        
+        let imageView4 = UIImageView();
+        let image4 = UIImage(named: "ic_lock_white_36pt");
+        imageView4.image = image4;
+        imageView4.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView4)
+        branch.leftView = imageView4;
+        branch.leftViewMode = UITextFieldViewMode.Always
+        
+        
+    }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
