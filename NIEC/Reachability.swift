@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Foundation
 public class Reachability {
     
     class func isConnectedToNetwork()->Bool{

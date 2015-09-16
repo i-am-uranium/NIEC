@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
     
@@ -23,9 +24,58 @@ class SignUpViewController: UIViewController {
 
         
     }
+    
     @IBAction func signUp(sender: AnyObject) {
-        self.navigationController?.popViewControllerAnimated(true)
+        
+        
+        
+        
+        if (userName.text?.isEmpty != false){
+            errorDialog("Sign Up Error", m1: "One or more field are empty", t2: "OK")
+            print("One or more fields are empty")
+            print(userName.text?.isEmpty)
+        }else if (password.text?.isEmpty != false){
+            errorDialog("Sign Up Error", m1: "One or more field are empty", t2: "OK")
+            print("One or more fields are empty")
+        }else if (email.text?.isEmpty != false){
+            errorDialog("Sign Up Error", m1: "One or more field are empty", t2: "OK")
+            print("One or more fields are empty")
+        }else if (branch.text?.isEmpty != false){
+            errorDialog("Sign Up Error", m1: "One or more field are empty", t2: "OK")
+            print("One or more fields are empty")
+        }else{
+            let user = PFUser()
+            user.username = userName.text
+            user.password = password.text
+            user.email = email.text
+            user["branch"] = branch.text
+            // other fields can be set just like with PFObject
+            //user["phone"] = "415-392-0202"
+            user.signUpInBackgroundWithBlock {
+                (succeeded: Bool, error: NSError?) -> Void in
+                if let error = error {
+                    let errorString = error.userInfo["error"] as? String
+                    print(errorString)
+                    self.errorDialog("Sign Up Error", m1: errorString!, t2: "OK")
+                    // Show the errorString somewhere and let the user try again.
+                } else {
+                    // Hooray! Let them use the app now.
+                    print("Sign Up successful")
+                    self.navigationController?.popViewControllerAnimated(true)
+
+                }
+            }
+            
+        }
+ }
+    
+    func errorDialog(t1:String,m1:String,t2:String){
+    
+        let alert = UIAlertController(title: t1, message: m1, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: t2, style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
+    
     func viewEditing(){
         self.view.backgroundColor = UIColor(netHex:0x211c32)
         editTestFields(email)

@@ -35,6 +35,11 @@ class PostSomething: UIViewController {
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil {
                     print("login succesful")
+                    
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                    let loggedInView: UIViewController = storyboard.instantiateViewControllerWithIdentifier("POSTVIEW")
+                    self.navigationController?.pushViewController(loggedInView, animated: true)
                     // Do stuff after successful login.
                 } else {
                     print("login error!")

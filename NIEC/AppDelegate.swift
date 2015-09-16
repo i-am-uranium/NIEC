@@ -27,6 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        // PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
        //custom color for the tabbar item icons
         
+        let navColor:UIColor = UIColor(netHex: 0x00BCD4)
+        let tintColor:UIColor = UIColor(netHex: 0xFF5252)
+        
+        UINavigationBar.appearance().backgroundColor = navColor
+        UIBarButtonItem.appearance().tintColor = tintColor
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: navColor]
+        //UITabBar.appearance().backgroundColor = UIColor.yellowColor();
+        
+        
+        
+        
+        
         
         let color = UIColor(red: 194/255, green: 0/255, blue: 4/255, alpha: 1.0)
         UITabBar.appearance().tintColor = color

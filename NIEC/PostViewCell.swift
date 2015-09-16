@@ -1,15 +1,18 @@
 //
-//  PostTableViewCell.swift
+//  PostViewCell.swift
 //  NIEC
 //
-//  Created by Ravi Ranjan on 03/09/15.
+//  Created by Ravi Ranjan on 09/09/15.
 //  Copyright © 2015 Ravi Ranjan. All rights reserved.
 //
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+class PostViewCell: UITableViewCell {
 
+    @IBOutlet var postMessage: UITextView!
+    @IBOutlet var createdAt: UILabel!
+    @IBOutlet var user: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
