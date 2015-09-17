@@ -18,7 +18,7 @@ class PostViewController:UIViewController,UITableViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Latest Post"
-        self.view.backgroundColor = UIColor(netHex: 0x211c32)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "n")!)
         
     }
 
@@ -42,13 +42,10 @@ class PostViewController:UIViewController,UITableViewDelegate{
                         print(object.objectId)
                     }
                 }
-                
                 let array:NSArray = self.timelineData.reverseObjectEnumerator().allObjects
                 self.timelineData = NSMutableArray(array:array)
                 self.tableview.reloadData()
-                
-                
-            } else {
+             } else {
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
             }
@@ -73,23 +70,13 @@ class PostViewController:UIViewController,UITableViewDelegate{
         return timelineData.count
     }
     
-    
-     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PostView", forIndexPath: indexPath) as! PostViewCell
-        
-        
-        if(indexPath.item % 2 == 0)
-        {
-            cell.backgroundColor = UIColor.clearColor()
-        }else{
-            
-            cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
-            
-        }
+        tableView.backgroundColor = UIColor(netHex: 0x00BCD4).colorWithAlphaComponent(0.3)
         cell.user.alpha = 0.0
         cell.createdAt.alpha = 0.0
         cell.postMessage.alpha = 0.0
-    
+        
         let object:PFObject = self.timelineData.objectAtIndex(indexPath.row) as! PFObject
         cell.postMessage.text = object.objectForKey("post") as! String
         
@@ -101,7 +88,7 @@ class PostViewController:UIViewController,UITableViewDelegate{
         
         let findusername:PFQuery = PFUser.query()!
         if let userObjec: PFObject = object.objectForKey("user") as? PFObject{
-        
+            
             findusername.whereKey("objectId", equalTo:userObjec.objectId!)
             findusername.findObjectsInBackgroundWithBlock {
                 (objects: [AnyObject]?, error: NSError?) -> Void in
@@ -110,20 +97,25 @@ class PostViewController:UIViewController,UITableViewDelegate{
                         let USER:PFUser = users.last!
                         cell.user.text = USER.username
                         UIView.animateWithDuration(0.1, animations: {
-                        
                             cell.user.alpha = 1.0
                             cell.createdAt.alpha = 1.0
                             cell.postMessage.alpha = 1.0
                         })
                     }
-                  } else {
-                
+                 } else {
                 }
-            
             }
         }
-        
+        if(indexPath.row % 2 == 0){
+        cell.backgroundColor = UIColor.clearColor()
+        }else{
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        }
+        cell.postMessage.layer.cornerRadius = 2.0
+        cell.postMessage.layer.borderColor = UIColor.blackColor().CGColor
+        cell.postMessage.layer.cornerRadius = 1.0
         return cell
     }
+    
     
 }

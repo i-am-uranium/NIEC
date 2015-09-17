@@ -27,6 +27,7 @@ class PostSomething: UIViewController {
         
         if username.text!.isEmpty || passwordField.text!.isEmpty{
             print("One or more fields are empty")
+            errorDialog("Input Error!",m1: "One or More FIelds are Empty!",t2: "Ok")
         
         }else{
             let USERNAME = username.text
@@ -42,12 +43,26 @@ class PostSomething: UIViewController {
                     self.navigationController?.pushViewController(loggedInView, animated: true)
                     // Do stuff after successful login.
                 } else {
-                    print("login error!")
+                    if let error = error {
+                        let errorString = error.userInfo["error"] as? String
+                        print(errorString)
+                        self.errorDialog("Login Error", m1: errorString!, t2: "OK")
+                        print("login error!")
+                    }
+                    
                     // do something to handle error
                 }
             }
         }
         
+    }
+    
+    
+    func errorDialog(t1:String,m1:String,t2:String){
+        
+        let alert = UIAlertController(title: t1, message: m1, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: t2, style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func loginEditView(){

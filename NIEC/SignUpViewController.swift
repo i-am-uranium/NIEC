@@ -107,16 +107,18 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     func signUpEdit(){
         
-        let imageView1 = UIImageView();
-        let image1 = UIImage(named: "ic_person_white_36pt");
-        imageView1.image = image1;
-        imageView1.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
-        view.addSubview(imageView1)
-        email.leftView = imageView1;
-        email.leftViewMode = UITextFieldViewMode.Always
+        
+        
+        
+        let imageView3 = UIImageView();
+        let image3 = UIImage(named: "ic_person_white_36pt");
+        imageView3.image = image3;
+        imageView3.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView3)
+        userName.leftView = imageView3;
+        userName.leftViewMode = UITextFieldViewMode.Always
         
         
         let imageView2 = UIImageView();
@@ -127,17 +129,17 @@ class SignUpViewController: UIViewController {
         password.leftView = imageView2;
         password.leftViewMode = UITextFieldViewMode.Always
         
-        let imageView3 = UIImageView();
-        let image3 = UIImage(named: "ic_lock_white_36pt");
-        imageView3.image = image3;
-        imageView3.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
-        view.addSubview(imageView3)
-        userName.leftView = imageView3;
-        userName.leftViewMode = UITextFieldViewMode.Always
+        let imageView1 = UIImageView();
+        let image1 = UIImage(named: "ic_mail_white_36pt");
+        imageView1.image = image1;
+        imageView1.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
+        view.addSubview(imageView1)
+        email.leftView = imageView1;
+        email.leftViewMode = UITextFieldViewMode.Always
         
         
         let imageView4 = UIImageView();
-        let image4 = UIImage(named: "ic_lock_white_36pt");
+        let image4 = UIImage(named: "ic_school_white_36pt");
         imageView4.image = image4;
         imageView4.frame = CGRect(x: 0, y: 10, width: 25, height: 25)
         view.addSubview(imageView4)
@@ -146,6 +148,7 @@ class SignUpViewController: UIViewController {
         
         
     }
+
     /*
     // MARK: - Navigation
 
