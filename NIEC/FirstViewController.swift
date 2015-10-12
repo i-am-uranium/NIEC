@@ -20,11 +20,7 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // parse test
-        
-       
-        
-        
+
      //   animateImage()
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
@@ -50,12 +46,7 @@ class FirstViewController: UIViewController {
     
     
     func buttonRadius(){
-        // setting the background of the main home page
-        
-        
-//        self.view.backgroundColor = color2
-        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "n")!)
         //making the rounded corners of the buttons
         studentSectionButton.layer.cornerRadius = 5
         noticesButton.layer.cornerRadius = 5

@@ -24,8 +24,16 @@ class NoticeDetailsViewController: UIViewController {
         navigationItem.backBarButtonItem = backButton
         
         let url = NSURL(string: "http://www.niecdelhi.ac.in" + noticeUrl)
-        let request = NSURLRequest(URL: url!)
-        noticeWebView.loadRequest(request)
+        if url != nil {
+            let request = NSURLRequest(URL: url!)
+            noticeWebView.loadRequest(request)
+        }else{
+            let alert = UIAlertController(title: "Error", message: "Something Went Wrong please retry...", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style:UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
 
        
     }

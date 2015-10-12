@@ -35,14 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: navColor]
         //UITabBar.appearance().backgroundColor = UIColor.yellowColor();
         
-        
-        
-        
-        
-        
-        
-        
-        
         let color = UIColor(red: 194/255, green: 0/255, blue: 4/255, alpha: 1.0)
         UITabBar.appearance().tintColor = color
         

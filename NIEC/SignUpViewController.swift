@@ -9,8 +9,7 @@
 import UIKit
 import Parse
 
-class SignUpViewController: UIViewController {
-    
+class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet var signUpButton: UIButton!
     @IBOutlet var email: UITextField!
@@ -21,14 +20,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewEditing()
-
-        
     }
     
     @IBAction func signUp(sender: AnyObject) {
-        
-        
-        
         
         if (userName.text?.isEmpty != false){
             errorDialog("Sign Up Error", m1: "One or more field are empty", t2: "OK")
@@ -49,20 +43,15 @@ class SignUpViewController: UIViewController {
             user.password = password.text
             user.email = email.text
             user["branch"] = branch.text
-            // other fields can be set just like with PFObject
-            //user["phone"] = "415-392-0202"
             user.signUpInBackgroundWithBlock {
                 (succeeded: Bool, error: NSError?) -> Void in
                 if let error = error {
                     let errorString = error.userInfo["error"] as? String
                     print(errorString)
                     self.errorDialog("Sign Up Error", m1: errorString!, t2: "OK")
-                    // Show the errorString somewhere and let the user try again.
-                } else {
-                    // Hooray! Let them use the app now.
+                    } else {
                     print("Sign Up successful")
                     self.navigationController?.popViewControllerAnimated(true)
-
                 }
             }
             
@@ -70,7 +59,6 @@ class SignUpViewController: UIViewController {
  }
     
     func errorDialog(t1:String,m1:String,t2:String){
-    
         let alert = UIAlertController(title: t1, message: m1, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: t2, style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
@@ -82,8 +70,13 @@ class SignUpViewController: UIViewController {
         editTestFields(password)
         editTestFields(userName)
         editTestFields(branch)
+        email.delegate = self
+        password.delegate = self
+        userName.delegate = self
+        branch.delegate = self
         buttonField(signUpButton,colors: UIColor(netHex: 0xf6546a))
         signUpEdit()
+        
     }
 
     
@@ -102,15 +95,8 @@ class SignUpViewController: UIViewController {
         buttonField.layer.borderWidth = 0.5
         
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+        
     func signUpEdit(){
-        
-        
-        
         
         let imageView3 = UIImageView();
         let image3 = UIImage(named: "ic_person_white_36pt");
@@ -149,14 +135,20 @@ class SignUpViewController: UIViewController {
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+//        if textField == userName{
+//        password.becomeFirstResponder()
+//        }
+//        else if textField == password{
+//            email.becomeFirstResponder()
+//        }else if textField == email{
+//            branch.becomeFirstResponder()
+//        }else{
+//            branch.resignFirstResponder()
+//        }
+        
+        return true
     }
-    */
 
 }

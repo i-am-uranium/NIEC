@@ -242,6 +242,15 @@
                             <outlet property="delegate" destination="eFG-my-IuO" id="12d-PH-Sg3"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Jxm-n7-Hd8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="x8C-Ej-1Fl">
+                            <connections>
+                                <action selector="viewDidLoad" destination="eFG-my-IuO" id="VPk-dC-2Sh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pC-gG-6x6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -409,7 +418,7 @@
                                     <outlet property="delegate" destination="76W-gw-VHx" id="tub-k6-ob7"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-KY-Yjq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-KY-Yjq">
                                 <rect key="frame" x="319" y="137" width="36" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
@@ -418,7 +427,7 @@
                                     <segue destination="7MU-iC-tua" kind="show" id="Btf-jX-RAT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsZ-1G-iZ7">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsZ-1G-iZ7">
                                 <rect key="frame" x="20" y="137" width="36" height="36"/>
                                 <animations/>
                                 <constraints>
@@ -534,21 +543,21 @@
                                 <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNz-Nv-0jY">
                                 <rect key="frame" x="48" y="287" width="278" height="30"/>
                                 <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Barach" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-em-EUC">
                                 <rect key="frame" x="48" y="374" width="278" height="30"/>
                                 <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Northern India Engineering College" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymF-Ju-EFJ">
                                 <rect key="frame" x="48" y="96" width="278" height="124"/>
@@ -562,7 +571,7 @@
                                 <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                         </subviews>
                         <animations/>
@@ -628,7 +637,7 @@
                                 <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYC-N7-L2k">
                                 <rect key="frame" x="48" y="305" width="278" height="30"/>
@@ -638,7 +647,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-iL-ZoL">
                                 <rect key="frame" x="202" y="389" width="124" height="30"/>
@@ -996,9 +1005,9 @@
                     <connections>
                         <segue destination="jam-53-N4z" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="hyR-J2-4L5" kind="relationship" relationship="viewControllers" id="Uc7-eH-KWj"/>
-                        <segue destination="ESd-ic-gfR" kind="relationship" relationship="viewControllers" id="dIT-8n-JvB"/>
-                        <segue destination="SFR-me-tiT" kind="relationship" relationship="viewControllers" id="go5-9F-k81"/>
                         <segue destination="qfI-dC-c6k" kind="relationship" relationship="viewControllers" id="Ot2-wO-osu"/>
+                        <segue destination="SFR-me-tiT" kind="relationship" relationship="viewControllers" id="go5-9F-k81"/>
+                        <segue destination="ESd-ic-gfR" kind="relationship" relationship="viewControllers" id="dIT-8n-JvB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1459,8 +1468,8 @@
                                     <segue destination="YPg-bQ-nYS" kind="show" id="cYI-b9-v8A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8du-8j-QQb">
-                                <rect key="frame" x="29" y="407" width="315" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8du-8j-QQb">
+                                <rect key="frame" x="30" y="407" width="315" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.024594349049999999" green="0.50633743190000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1751,13 +1760,13 @@
             <objects>
                 <tableViewController title="Social" id="nH9-3Q-3dw" customClass="SocialTableViewController" customModule="NIEC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="bch-8L-WDk">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="b2M-tX-3Yf" customClass="SocialTableViewCell" customModule="NIEC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="86" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b2M-tX-3Yf" id="YwF-xK-V3X">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
@@ -1817,10 +1826,10 @@
                         <viewControllerLayoutGuide type="bottom" id="UZf-CV-OZc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vEH-v7-ueU">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxr-h3-rkZ">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxr-h3-rkZ">
                                 <rect key="frame" x="0.0" y="566" width="375" height="44"/>
                                 <animations/>
                                 <items>
@@ -1848,11 +1857,11 @@
                                 </items>
                             </toolbar>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="la2-eK-P8l">
-                                <rect key="frame" x="169" y="296" width="37" height="37"/>
+                                <rect key="frame" x="169" y="360" width="37" height="37"/>
                                 <animations/>
                                 <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5te-OM-31Z">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5te-OM-31Z">
                                 <rect key="frame" x="0.0" y="64" width="375" height="502"/>
                                 <animations/>
                                 <connections>
@@ -2259,7 +2268,7 @@
         <image name="niec_campus" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="h1e-zT-wb3"/>
+        <segue reference="Jy3-pf-tBH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.059478912389999999" blue="0.16974209060000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

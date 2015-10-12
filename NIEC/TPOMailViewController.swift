@@ -67,7 +67,7 @@ class TPOMailViewController: UIViewController,MFMailComposeViewControllerDelegat
     func customizingTheFields(){
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         navigationItem.backBarButtonItem = backButton
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "n")!)
         
         self.messageField.layer.cornerRadius = 5.0
         self.messageField.layer.borderColor = UIColor.grayColor().CGColor

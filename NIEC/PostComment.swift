@@ -39,7 +39,7 @@ class PostComment: UIViewController {
     
     @IBAction func postButton(sender: AnyObject) {
         let postObject = PFObject(className:"Posts")
-        var message:String = self.textview.text
+        let message:String = self.textview.text
         if(!message.isEmpty && message != " "){
             postObject["post"] = textview.text
             postObject["user"] = PFUser.currentUser()

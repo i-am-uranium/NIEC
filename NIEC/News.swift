@@ -11,13 +11,10 @@ import UIKit
 class News: UITableViewController {
 
    var newsModel = NewsModel()
-    override func viewDidLoad() {
+    @IBAction override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         newsModel.fetchItems {
                 dispatch_async(dispatch_get_main_queue()){
-                    print("Internet connection OK")
                     self.tableView.reloadData()
                  }
             }
@@ -60,18 +57,9 @@ class News: UITableViewController {
     func confugureCell(cell:NewsCell,atIndexPath indexPath:NSIndexPath){
         cell.newsTitle.text = newsModel.titleForItemAtIndexPath(indexPath)
         cell.endDate.text = newsModel.dateForIndex(indexPath)
-//        if(newsModel.dateForIndex(indexPath) == nil){
-//        
-//            
-//            let alert:UIAlertController = UIAlertController(title: "Error...", message: "Somthng went wrong retry later", preferredStyle: UIAlertControllerStyle.Alert)
-//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-//            self.presentViewController(alert, animated: true, completion: nil)
-//        }
-    }
+}
    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "news"){
             let vc = segue.destinationViewController as! NewsDetails

@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ContactUs: UIViewController {
+class ContactUs: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
 
     @IBOutlet weak var directionsButton: UIButton!
@@ -32,8 +32,12 @@ class ContactUs: UIViewController {
     
     // to implement the map view
     func mapImplementation(){
+        let locationMGR = CLLocationManager()
+        locationMGR.delegate = self
+        locationMGR.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+        locationMGR.startUpdatingLocation()
         let location = CLLocationCoordinate2DMake(28.678280999999998, 77.260981999999998)
-        let  span = MKCoordinateSpanMake(0.5, 0.5)
+        let  span = MKCoordinateSpanMake(0.05, 0.05)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         // to create the annaotation
@@ -48,7 +52,7 @@ class ContactUs: UIViewController {
     func customizingView(){
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "login")!)
         self.mapView.layer.cornerRadius =
-            self.mapView.frame.size.width / 5
+        self.mapView.frame.size.width / 5
         self.mapView.clipsToBounds = true
         self.mapView.layer.borderWidth = 3.0
         self.mapView.layer.borderColor = UIColor.whiteColor().CGColor

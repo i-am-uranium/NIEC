@@ -8,18 +8,19 @@
 
 import UIKit
 
-class PostSomething: UIViewController {
+class PostSomething: UIViewController,UITextFieldDelegate {
     
     @IBOutlet var signUpButton: UIButton!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var username: UITextField!
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordField.delegate = self
+        username.delegate = self
         loginEditView()
-      
-        
     }
     
     
@@ -28,7 +29,7 @@ class PostSomething: UIViewController {
         if username.text!.isEmpty || passwordField.text!.isEmpty{
             print("One or more fields are empty")
             errorDialog("Input Error!",m1: "One or More FIelds are Empty!",t2: "Ok")
-        
+            
         }else{
             let USERNAME = username.text
             let PASSWORD = passwordField.text
@@ -36,8 +37,6 @@ class PostSomething: UIViewController {
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil {
                     print("login succesful")
-                    
-                    
                     let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
                     let loggedInView: UIViewController = storyboard.instantiateViewControllerWithIdentifier("POSTVIEW")
                     self.navigationController?.pushViewController(loggedInView, animated: true)
@@ -51,6 +50,7 @@ class PostSomething: UIViewController {
                     }
                     
                     // do something to handle error
+                    self.errorDialog("Login Error", m1:"Oops! something went wrong", t2: "OK")
                 }
             }
         }
@@ -104,23 +104,13 @@ class PostSomething: UIViewController {
         field.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
         field.layer.borderWidth = 0.5
         field.layer.borderColor = UIColor.whiteColor().CGColor
-   }
-
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // to resign the first responder
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    */
-
+    
+    
 }

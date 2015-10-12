@@ -50,7 +50,6 @@
 		FA8E09BC1B8E45460089A4DA /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E09BB1B8E45460089A4DA /* NewsCell.swift */; };
 		FA8E09BE1B8E45630089A4DA /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E09BD1B8E45630089A4DA /* NewsDetails.swift */; };
 		FA8E09C01B8E477B0089A4DA /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E09BF1B8E477B0089A4DA /* NewsModel.swift */; };
-		FAAA5EE61B95970900750A38 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA5EE51B95970900750A38 /* Reachability.swift */; };
 		FAB51A861B9F8EE3004F16AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB51A851B9F8EE3004F16AF /* SignUpViewController.swift */; };
 		FAB8D0341B98E7ED005DF2AE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8D0321B98E7ED005DF2AE /* libsqlite3.0.tbd */; };
 		FAB8D0351B98E7ED005DF2AE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8D0331B98E7ED005DF2AE /* libsqlite3.tbd */; };
@@ -138,7 +137,6 @@
 		FA8E09BB1B8E45460089A4DA /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		FA8E09BD1B8E45630089A4DA /* NewsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetails.swift; sourceTree = "<group>"; };
 		FA8E09BF1B8E477B0089A4DA /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
-		FAAA5EE51B95970900750A38 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		FAB51A851B9F8EE3004F16AF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FAB8D0321B98E7ED005DF2AE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FAB8D0331B98E7ED005DF2AE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -238,7 +236,6 @@
 				1BB333EC1B63004A00BF8EB7 /* bbd.html */,
 				1BB333ED1B63004A00BF8EB7 /* alkadas.html */,
 				1BB333EE1B63004A00BF8EB7 /* akhilesh.html */,
-				FAAA5EE51B95970900750A38 /* Reachability.swift */,
 				FA16E1291B9E2F3B005B7304 /* File.swift */,
 			);
 			name = Utility;
@@ -558,7 +555,6 @@
 				1B6223B31B62479D00902748 /* SocialTableViewController.swift in Sources */,
 				FA7576631B8CF43D0005F03F /* LatestEventTableViewCell.swift in Sources */,
 				1BB333D41B629A5A00BF8EB7 /* SocialDetailsViewController.swift in Sources */,
-				FAAA5EE61B95970900750A38 /* Reachability.swift in Sources */,
 				FA7D167E1BA0242B00DDBAD2 /* PostViewController.swift in Sources */,
 				FA16E12A1B9E2F3B005B7304 /* File.swift in Sources */,
 				1BEE42211B6010EF00CCF70B /* ProfileDetails.swift in Sources */,
