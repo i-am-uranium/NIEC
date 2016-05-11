@@ -7,3 +7,18 @@ Northern India Engineering College (NIEC), New Delhi was established by BBDES, L
 
 
 ![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.22.27%20AM.png "NoticeBoard")
+
+![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.22.36%20AM.png "Social")
+
+
+![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.23.20%20AM.png "Login")
+
+![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.23.27%20AM.png "SignUp")
+
+
+![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.23.40%20AM.png "NIEC")
+
+![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.23.51%20AM.png "BBD Campus")
+
+
+![Alt text](https://github.com/i-am-uranium/NIEC/blob/master/Simulator%20Screen%20Shot%2011-May-2016%2C%209.23.58%20AM.png "Contact Us")
